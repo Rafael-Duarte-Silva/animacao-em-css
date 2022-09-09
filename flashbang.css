@@ -28,6 +28,7 @@ body{
     animation-fill-mode: backwards;
     position: relative;
     opacity: 0;
+    visibility: hidden;
 }
 
 #flashbang_image{
@@ -35,7 +36,7 @@ body{
 }
 
 @keyframes flash{
-    0%{left: -40vh; opacity: 1;}
+    0%{left: -40vh; opacity: 1; visibility: visible;}
     50%{left: 50vh; margin-top: 50vh; transform: rotate(886deg);}
     100%{left: 125vh; margin-top: 5vh; transform: rotate(1320deg); opacity: 1;}
 }
