@@ -2,7 +2,8 @@ body{
     margin: 0;
 }
 
-#flashbang{
+#flashbang_explosão{
+    z-index: -1;
 	position: relative;
 	width: 100%;
 	height: 100vh;
@@ -10,15 +11,13 @@ body{
 
     animation-name: explosão;
     animation-delay: 1.7s;
-    animation-duration: 2.5s;
+    animation-duration: 1.6s;
     animation-fill-mode: forwards;
 }
 
 @keyframes explosão{
-    0%{background-color: black;}
-    25%{background-color: rgb(255, 255, 255);}
-    50%{background-color: rgb(170, 170, 170);}
-    100%{background-color: black;}
+    0% {background-color: black;}
+    100% {background-color: rgb(255, 255, 255);}
 }
 
 #flashbang_image{
@@ -39,4 +38,24 @@ body{
     0%{left: -40vh; opacity: 1; visibility: visible;}
     50%{left: 50vh; margin-top: 50vh; transform: rotate(886deg);}
     100%{left: 125vh; margin-top: 5vh; transform: rotate(1320deg); opacity: 1;}
+}
+
+#titulo{
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    color: white;
+    font-size: 20vh;
+
+    animation-name: aparecer;
+    animation-delay: 1.7s;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes aparecer{
+    0% {color: white;}
+    100% {color: black;}
 }
