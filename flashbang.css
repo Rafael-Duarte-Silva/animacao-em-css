@@ -10,7 +10,7 @@ body{
     background-color: black;
 
     animation-name: explosão;
-    animation-delay: 1.8s;
+    animation-delay: 1.9s;
     animation-duration: 1.6s;
     animation-fill-mode: forwards;
 }
@@ -30,7 +30,7 @@ body{
     font-size: 20vh;
 
     animation-name: aparecer;
-    animation-delay: 1.8s;
+    animation-delay: 1.9s;
     animation-duration: 2.3s;
     animation-fill-mode: forwards;
 }
