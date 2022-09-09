@@ -22,22 +22,22 @@ body{
 
 #titulo{
     position: absolute;
+    visibility: hidden;
     text-align: center;
     top: 35%;
     width: 100%;
     margin: 0;
     font-size: 20vh;
-    color: white;
 
     animation-name: aparecer;
     animation-delay: 1.8s;
-    animation-duration: 4s;
+    animation-duration: 2.3s;
     animation-fill-mode: forwards;
 }
 
 @keyframes aparecer{
-    0% {color: white;}
-    100% {color: black;}
+    0% {color: white; visibility: visible;}
+    100% {color: black; visibility: visible;}
 }
 
 #flashbang_image{
